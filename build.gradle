@@ -17,7 +17,7 @@ plugins {
 apply plugin: 'kotlin'
 apply plugin: 'maven'
 
-group='com.d3'
+group='com.github.dolgopolovwork'
 version = '1'
 
 repositories {
@@ -40,7 +40,7 @@ pluginBundle {
 gradlePlugin {
     plugins {
         d3testReportPlugin {
-            id = 'com.d3.testreport'
+            id = 'com.github.dolgopolovwork.testreport'
             displayName = 'D3 integration test report plugin'
             description = 'Plugin that creates pretty looking integration test reports for D3 projects'
             implementationClass = 'com.d3.report.ReportPlugin'
