@@ -21,7 +21,7 @@ private const val DATE_FORMAT = "dd.MM.yyyy HH:mm"
 private const val D3_PROJECT_TITLE = "D3 test report"
 
 /*
- * ReportExtension creating service
+ * Test report creating service
  */
 class TestReportService {
 

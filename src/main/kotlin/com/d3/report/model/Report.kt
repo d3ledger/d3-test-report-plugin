@@ -13,7 +13,7 @@ class Report {
     var summary: Summary = Summary()
     // Test files
     var testFiles: MutableList<String> = ArrayList()
-    // ReportExtension data with more detailed information divided by test files
+    // Test report data with more detailed information divided by test files
     var reportData: MutableList<TestFileReport> = ArrayList()
     // Test cases with no description
     var noDescriptionTestCases: MutableList<String> = ArrayList()

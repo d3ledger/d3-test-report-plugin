@@ -8,7 +8,6 @@ package com.d3.report.walker
 import java.io.File
 
 private const val KOTLIN_TEST_FILE_EXT = ".kt"
-private const val JAVA_TEST_FILE_EXT = ".java"
 private const val TEST_POSTFIX = "test"
 
 /*
@@ -25,7 +24,7 @@ class TestsWalker {
     fun getTestFiles(rootFolder: String) = File(rootFolder).walkTopDown()
         .filter { file ->
             val fileName = file.absolutePath
-            (fileName.endsWith(KOTLIN_TEST_FILE_EXT) || fileName.endsWith(JAVA_TEST_FILE_EXT)) &&
+            fileName.endsWith(KOTLIN_TEST_FILE_EXT) &&
                     file.name.toLowerCase().contains(TEST_POSTFIX)
         }
         .map { file -> file.absolutePath }.toList()

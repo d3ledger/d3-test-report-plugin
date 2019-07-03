@@ -64,7 +64,7 @@ private fun copyCssFile() {
         return
     }
     Files.copy(
-        Thread.currentThread().contextClassLoader.getResourceAsStream(REPORT_CSS_FILE),
+        Thread.currentThread().contextClassLoader.getResourceAsStream(REPORT_CSS_FILE)!!,
         cssFile.toPath()
     )
 }

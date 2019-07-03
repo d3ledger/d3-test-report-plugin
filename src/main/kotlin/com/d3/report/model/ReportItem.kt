@@ -6,7 +6,7 @@
 package com.d3.report.model
 
 /*
- * ReportExtension data of single test case
+ * Test report data of single test case
  */
 class ReportItem {
 
